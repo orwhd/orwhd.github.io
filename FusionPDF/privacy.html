@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Privacy Policy for the FusionPDF Chrome extension and FusionPDF Desktop Companion."
+    />
+    <meta name="theme-color" content="#f4f1ec" />
+    <link rel="canonical" href="https://orwhd.github.io/FusionPDF/privacy.html" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b3e96'/%3E%3Cpath d='M20 14h27v9H31v9h14v9H31v16H20z' fill='white'/%3E%3C/svg%3E"
+    />
+    <title>Privacy Policy - FusionPDF</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --page: #f4f1ec;
+        --paper: #fffdf9;
+        --paper-muted: #ece7df;
+        --ink: #17161a;
+        --muted: #625f67;
+        --line: #d3ccc2;
+        --line-strong: #b8afa3;
+        --primary: #5b3e96;
+        --primary-soft: #ebe3f7;
+        --accent: #a33d20;
+        --accent-soft: #f8e6df;
+        --success: #245f46;
+        --success-soft: #e2f0e8;
+        --code: #25232a;
+        --code-ink: #f8f5ef;
+        --shadow: 0 18px 48px rgba(44, 35, 30, 0.09);
+        --font-body: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, sans-serif;
+        --font-display: "Iowan Old Style", Baskerville, "Times New Roman", serif;
+        --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-width: 320px;
+        margin: 0;
+        background:
+          linear-gradient(rgba(91, 62, 150, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(91, 62, 150, 0.035) 1px, transparent 1px),
+          var(--page);
+        background-size: 32px 32px;
+        color: var(--ink);
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.72;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.18em;
+      }
+
+      a:hover {
+        color: var(--accent);
+      }
+
+      :focus-visible {
+        outline: 3px solid rgba(91, 62, 150, 0.35);
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: fixed;
+        z-index: 100;
+        top: 12px;
+        left: 12px;
+        padding: 10px 14px;
+        border-radius: 6px;
+        background: var(--ink);
+        color: var(--paper);
+        transform: translateY(-160%);
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .masthead {
+        position: sticky;
+        z-index: 20;
+        top: 0;
+        border-bottom: 1px solid rgba(184, 175, 163, 0.75);
+        background: rgba(244, 241, 236, 0.9);
+        backdrop-filter: blur(18px);
+      }
+
+      .masthead-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(1220px, calc(100% - 40px));
+        min-height: 68px;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: inline-flex;
+        gap: 11px;
+        align-items: center;
+        color: var(--ink);
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        position: relative;
+        display: grid;
+        width: 34px;
+        height: 34px;
+        overflow: hidden;
+        border: 1px solid rgba(91, 62, 150, 0.25);
+        border-radius: 8px;
+        background: var(--primary);
+        color: #fff;
+        font-family: var(--font-display);
+        font-size: 18px;
+        line-height: 1;
+        place-items: center;
+      }
+
+      .brand-mark::after {
+        position: absolute;
+        right: -7px;
+        bottom: -7px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #dd7757;
+        content: "";
+      }
+
+      .brand-name {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+      }
+
+      .brand-name small {
+        margin-top: 3px;
+        color: var(--muted);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .header-label {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 253, 249, 0.8);
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .page-shell {
+        display: grid;
+        grid-template-columns: 220px minmax(0, 780px);
+        gap: clamp(36px, 7vw, 96px);
+        justify-content: center;
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 64px 0 96px;
+      }
+
+      .contents {
+        position: sticky;
+        top: 100px;
+        align-self: start;
+        padding-top: 8px;
+      }
+
+      .contents-label {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .contents ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: contents;
+      }
+
+      .contents li {
+        counter-increment: contents;
+        border-top: 1px solid rgba(211, 204, 194, 0.72);
+      }
+
+      .contents a {
+        display: grid;
+        grid-template-columns: 24px minmax(0, 1fr);
+        gap: 7px;
+        padding: 9px 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.35;
+        text-decoration: none;
+      }
+
+      .contents a::before {
+        color: var(--line-strong);
+        content: counter(contents, decimal-leading-zero);
+        font-family: var(--font-mono);
+        font-size: 9px;
+        line-height: 1.65;
+      }
+
+      .contents a:hover {
+        color: var(--primary);
+      }
+
+      .policy {
+        min-width: 0;
+      }
+
+      .policy-header {
+        padding-bottom: 42px;
+        border-bottom: 2px solid var(--ink);
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        letter-spacing: -0.015em;
+      }
+
+      h1 {
+        max-width: 700px;
+        margin: 0;
+        font-size: clamp(48px, 8vw, 82px);
+        line-height: 0.98;
+      }
+
+      .policy-intro {
+        max-width: 700px;
+        margin: 26px 0 0;
+        color: var(--muted);
+        font-size: clamp(17px, 2vw, 20px);
+        line-height: 1.62;
+      }
+
+      .policy-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 24px;
+        margin-top: 26px;
+        color: var(--muted);
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.02em;
+      }
+
+      .policy-meta span {
+        display: inline-flex;
+        gap: 7px;
+        align-items: center;
+      }
+
+      .policy-meta span::before {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--accent);
+        content: "";
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 34px 0 0;
+        border-top: 1px solid var(--line);
+        border-left: 1px solid var(--line);
+      }
+
+      .summary-item {
+        min-height: 154px;
+        padding: 24px;
+        border-right: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 253, 249, 0.62);
+      }
+
+      .summary-item:nth-child(2) {
+        background: var(--primary-soft);
+      }
+
+      .summary-item:nth-child(3) {
+        background: var(--success-soft);
+      }
+
+      .summary-index {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--accent);
+        font-family: var(--font-mono);
+        font-size: 10px;
+      }
+
+      .summary-item strong {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 14px;
+        line-height: 1.3;
+      }
+
+      .summary-item p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .policy-section {
+        display: grid;
+        grid-template-columns: 52px minmax(0, 1fr);
+        gap: 18px;
+        padding: 46px 0;
+        border-bottom: 1px solid var(--line);
+        scroll-margin-top: 96px;
+      }
+
+      .section-number {
+        padding-top: 7px;
+        color: var(--accent);
+        font-family: var(--font-mono);
+        font-size: 11px;
+        letter-spacing: 0.04em;
+      }
+
+      .section-body {
+        min-width: 0;
+      }
+
+      h2 {
+        margin: 0 0 17px;
+        font-size: clamp(29px, 4vw, 38px);
+        line-height: 1.12;
+      }
+
+      h3 {
+        margin: 27px 0 9px;
+        font-size: 20px;
+        line-height: 1.3;
+      }
+
+      p {
+        margin: 0 0 16px;
+      }
+
+      p:last-child,
+      ul:last-child,
+      ol:last-child {
+        margin-bottom: 0;
+      }
+
+      ul,
+      ol {
+        margin: 0 0 18px;
+        padding-left: 1.25em;
+      }
+
+      li {
+        margin: 7px 0;
+        padding-left: 0.25em;
+      }
+
+      li::marker {
+        color: var(--accent);
+      }
+
+      strong {
+        color: var(--ink);
+      }
+
+      code {
+        padding: 0.12em 0.36em;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: var(--paper-muted);
+        color: var(--code);
+        font-family: var(--font-mono);
+        font-size: 0.88em;
+        overflow-wrap: anywhere;
+      }
+
+      .endpoint {
+        display: block;
+        margin: 22px 0;
+        padding: 16px 18px;
+        border-left: 4px solid var(--primary);
+        background: var(--code);
+        color: var(--code-ink);
+        font-family: var(--font-mono);
+        font-size: 14px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+      }
+
+      .note {
+        margin: 22px 0;
+        padding: 19px 20px;
+        border-left: 4px solid var(--accent);
+        background: var(--accent-soft);
+        color: #542318;
+      }
+
+      .note p:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact-block {
+        margin-top: 24px;
+        padding: 24px;
+        border: 1px solid var(--line-strong);
+        border-radius: 8px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .contact-name {
+        display: block;
+        margin-bottom: 5px;
+        font-family: var(--font-display);
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .contact-email {
+        font-family: var(--font-mono);
+        font-size: 13px;
+        overflow-wrap: anywhere;
+      }
+
+      .site-footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 26px;
+        justify-content: space-between;
+        width: min(1220px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 25px 0 36px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .site-footer a {
+        color: inherit;
+      }
+
+      @media (max-width: 900px) {
+        .page-shell {
+          grid-template-columns: minmax(0, 780px);
+          padding-top: 48px;
+        }
+
+        .contents {
+          position: static;
+          padding: 0 0 8px;
+        }
+
+        .contents ol {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          border-left: 1px solid var(--line);
+        }
+
+        .contents li {
+          border-right: 1px solid var(--line);
+        }
+
+        .contents a {
+          padding: 10px 12px;
+        }
+      }
+
+      @media (max-width: 620px) {
+        body {
+          background-size: 24px 24px;
+        }
+
+        .masthead-inner,
+        .page-shell,
+        .site-footer {
+          width: min(100% - 28px, 780px);
+        }
+
+        .header-label {
+          display: none;
+        }
+
+        .page-shell {
+          gap: 28px;
+          padding: 36px 0 70px;
+        }
+
+        .contents ol,
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .contents li:last-child {
+          border-bottom: 1px solid var(--line);
+        }
+
+        h1 {
+          font-size: clamp(44px, 16vw, 64px);
+        }
+
+        .policy-section {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          padding: 37px 0;
+        }
+
+        .section-number {
+          padding-top: 0;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --page: #17151a;
+          --paper: #211e25;
+          --paper-muted: #2c2831;
+          --ink: #f2ede6;
+          --muted: #bbb3bf;
+          --line: #403a46;
+          --line-strong: #5a5262;
+          --primary: #cbb9ff;
+          --primary-soft: #2e2840;
+          --accent: #f39a78;
+          --accent-soft: #40271f;
+          --success: #99d4b6;
+          --success-soft: #20362d;
+          --code: #0f0e12;
+          --code-ink: #f7f3ec;
+          --shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+        }
+
+        body {
+          background:
+            linear-gradient(rgba(203, 185, 255, 0.025) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(203, 185, 255, 0.025) 1px, transparent 1px),
+            var(--page);
+        }
+
+        .masthead {
+          background: rgba(23, 21, 26, 0.9);
+        }
+
+        .summary-item,
+        .header-label {
+          background: rgba(33, 30, 37, 0.78);
+        }
+
+        .summary-item:nth-child(2) {
+          background: var(--primary-soft);
+        }
+
+        .summary-item:nth-child(3) {
+          background: var(--success-soft);
+        }
+
+        .note {
+          color: #ffddcf;
+        }
+      }
+
+      @media print {
+        :root {
+          color-scheme: light;
+          --page: #fff;
+          --paper: #fff;
+          --paper-muted: #f3f3f3;
+          --ink: #000;
+          --muted: #333;
+          --line: #bbb;
+          --line-strong: #777;
+          --primary: #333;
+          --primary-soft: #fff;
+          --accent: #000;
+          --accent-soft: #f3f3f3;
+          --success-soft: #fff;
+          --shadow: none;
+        }
+
+        body {
+          background: #fff;
+          font-size: 11pt;
+        }
+
+        .masthead,
+        .contents,
+        .skip-link,
+        .site-footer {
+          display: none;
+        }
+
+        .page-shell {
+          display: block;
+          width: 100%;
+          padding: 0;
+        }
+
+        .policy-header {
+          padding-top: 0;
+        }
+
+        .summary {
+          break-inside: avoid;
+        }
+
+        .policy-section {
+          break-inside: avoid;
+          padding: 22px 0;
+        }
+
+        .contact-block {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#policy">Skip to policy</a>
+
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="brand" href="/" aria-label="FusionPDF home">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span class="brand-name">
+            FusionPDF
+            <small>Privacy</small>
+          </span>
+        </a>
+        <span class="header-label">Effective September 22, 2026</span>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <aside class="contents" aria-labelledby="contents-title">
+        <p class="contents-label" id="contents-title">On this page</p>
+        <ol>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#data">Data processed</a></li>
+          <li><a href="#use">How data is used</a></li>
+          <li><a href="#local">Local processing</a></li>
+          <li><a href="#providers">Translation providers</a></li>
+          <li><a href="#storage">Data storage</a></li>
+          <li><a href="#sharing">Data sharing</a></li>
+          <li><a href="#retention">Data retention</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#permissions">Chrome permissions</a></li>
+          <li><a href="#choices">Choices and deletion</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#changes">Policy changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#limited-use">Limited use</a></li>
+        </ol>
+      </aside>
+
+      <article class="policy" id="policy">
+        <header class="policy-header">
+          <p class="eyebrow">Official policy</p>
+          <h1>Privacy Policy for FusionPDF</h1>
+          <p class="policy-intro">
+            This Privacy Policy explains how the FusionPDF Chrome extension and
+            FusionPDF Desktop Companion handle user data.
+          </p>
+          <div class="policy-meta">
+            <span>Effective September 22, 2026</span>
+            <span>Chrome extension + Desktop Companion</span>
+          </div>
+        </header>
+
+        <section class="summary" aria-label="Privacy summary">
+          <div class="summary-item">
+            <span class="summary-index">01 / LOCAL</span>
+            <strong>PDF processing stays on your computer</strong>
+            <p>
+              The Desktop Companion processes selected PDFs locally and communicates
+              with the extension through a loopback connection.
+            </p>
+          </div>
+          <div class="summary-item">
+            <span class="summary-index">02 / PROVIDER</span>
+            <strong>You choose the translation provider</strong>
+            <p>
+              FusionPDF sends translation requests only to the OpenAI-compatible provider
+              you configure.
+            </p>
+          </div>
+          <div class="summary-item">
+            <span class="summary-index">03 / CONTROL</span>
+            <strong>API key memory is optional</strong>
+            <p>
+              Keys remain in memory by default and are saved only when you explicitly
+              enable Remember.
+            </p>
+          </div>
+          <div class="summary-item">
+            <span class="summary-index">04 / TRUST</span>
+            <strong>Your data is not sold</strong>
+            <p>
+              FusionPDF does not sell user data or share it with advertisers or data
+              brokers.
+            </p>
+          </div>
+        </section>
+
+        <p>
+          FusionPDF consists of the FusionPDF Chrome extension and FusionPDF Desktop
+          Companion, a locally installed backend manager. The Chrome extension and
+          Desktop Companion are distributed separately.
+        </p>
+
+        <section class="policy-section" id="scope">
+          <span class="section-number" aria-hidden="true">01</span>
+          <div class="section-body">
+            <h2>Scope</h2>
+            <p>This policy applies to:</p>
+            <ul>
+              <li>The FusionPDF Chrome extension</li>
+              <li>The FusionPDF Desktop Companion</li>
+              <li>The FusionPDF welcome, download, and documentation pages</li>
+            </ul>
+            <p>
+              It does not apply to third-party services selected by the user, including
+              OpenAI-compatible translation providers.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="data">
+          <span class="section-number" aria-hidden="true">02</span>
+          <div class="section-body">
+            <h2>Data FusionPDF processes</h2>
+            <p>
+              FusionPDF processes data only when the user explicitly opens or selects a
+              PDF through the extension. The following data may be processed:
+            </p>
+            <ul>
+              <li>PDF files selected by the user</li>
+              <li>PDF pages and page images</li>
+              <li>Text-region crops generated from PDF pages</li>
+              <li>Target translation language</li>
+              <li>Source language when provided</li>
+              <li>Provider URL</li>
+              <li>Provider model identifier</li>
+              <li>Provider API key</li>
+              <li>Translation preferences, including font size and reasoning settings</li>
+              <li>Non-sensitive model capability information</li>
+              <li>Temporary document session identifiers</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="policy-section" id="use">
+          <span class="section-number" aria-hidden="true">03</span>
+          <div class="section-body">
+            <h2>How data is used</h2>
+            <p>FusionPDF uses this data only to:</p>
+            <ul>
+              <li>Open and display user-selected PDFs</li>
+              <li>Locate text regions in PDF pages</li>
+              <li>Prepare page or text-region images for translation</li>
+              <li>Send translation requests to the provider configured by the user</li>
+              <li>Display translation results in the Chrome extension</li>
+              <li>Remember user settings and optional preferences</li>
+              <li>Maintain local document sessions until they expire or are removed</li>
+            </ul>
+            <p>
+              FusionPDF does not use user data for advertising, profiling,
+              creditworthiness, lending, or purposes unrelated to the extension's
+              single purpose.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="local">
+          <span class="section-number" aria-hidden="true">04</span>
+          <div class="section-body">
+            <h2>Local processing</h2>
+            <p>
+              PDF processing and layout detection are performed by FusionPDF Desktop
+              Companion on the user's own computer. The Desktop Companion is designed
+              to run locally and listen on the loopback address:
+            </p>
+            <code class="endpoint">127.0.0.1:53127</code>
+            <p>
+              PDF files and temporary document sessions are stored locally by the
+              Desktop Companion for processing and are designed to expire
+              automatically. By default, document sessions expire after approximately
+              30 minutes of inactivity. Users can also remove the Desktop Companion
+              and its local application data.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="providers">
+          <span class="section-number" aria-hidden="true">05</span>
+          <div class="section-body">
+            <h2>External translation providers</h2>
+            <p>
+              FusionPDF does not include a built-in translation provider or API key.
+              When the user requests a translation, FusionPDF sends the relevant
+              text-region images and translation request to the external
+              OpenAI-compatible provider configured by the user.
+            </p>
+            <h3>The provider may receive</h3>
+            <ul>
+              <li>Text-region images generated from the PDF</li>
+              <li>Translation instructions</li>
+              <li>Target language</li>
+              <li>Source language when provided</li>
+              <li>Provider model identifier</li>
+              <li>Authentication credentials required by that provider</li>
+            </ul>
+            <div class="note">
+              <p>
+                The provider's own privacy policy and data-retention practices apply to
+                data it receives. Review the provider's terms before using it.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="policy-section" id="storage">
+          <span class="section-number" aria-hidden="true">06</span>
+          <div class="section-body">
+            <h2>Data storage</h2>
+            <p>
+              The Chrome extension may store the following data in extension storage:
+            </p>
+            <ul>
+              <li>Provider URL</li>
+              <li>Provider model</li>
+              <li>Translation font size</li>
+              <li>Reasoning and thinking-effort preferences</li>
+              <li>Non-sensitive model capability summaries</li>
+            </ul>
+            <p>The API key is kept in memory by default.</p>
+            <p>
+              The API key is written to <code>chrome.storage.local</code> only when the
+              user explicitly enables the <strong>Remember</strong> option. The
+              extension does not store API keys in ordinary website
+              <code>localStorage</code>.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="sharing">
+          <span class="section-number" aria-hidden="true">07</span>
+          <div class="section-body">
+            <h2>Data sharing</h2>
+            <ul>
+              <li>FusionPDF does not sell user data.</li>
+              <li>
+                FusionPDF does not share user data with advertisers or data brokers.
+              </li>
+              <li>
+                FusionPDF transfers PDF-derived translation data only to the external
+                provider selected by the user for the requested translation.
+              </li>
+              <li>
+                FusionPDF does not transfer user PDF content to a FusionPDF-operated
+                cloud service in the current release.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="policy-section" id="retention">
+          <span class="section-number" aria-hidden="true">08</span>
+          <div class="section-body">
+            <h2>Data retention</h2>
+            <ul>
+              <li>
+                Extension settings remain until the user changes them, clears
+                extension data, or uninstalls the extension.
+              </li>
+              <li>
+                A remembered API key remains in <code>chrome.storage.local</code> until
+                the user disables <strong>Remember</strong>, clears extension storage,
+                or uninstalls the extension.
+              </li>
+              <li>
+                Desktop Companion document sessions are temporary. They expire after
+                approximately 30 minutes of inactivity by default and are normally
+                removed shortly afterward.
+              </li>
+              <li>
+                Local model caches remain until removed by the user or by the Desktop
+                Companion upgrade or uninstall process.
+              </li>
+              <li>
+                Data retained by an external provider is controlled by that provider,
+                not by FusionPDF.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="policy-section" id="security">
+          <span class="section-number" aria-hidden="true">09</span>
+          <div class="section-body">
+            <h2>Security</h2>
+            <p>FusionPDF uses the following safeguards:</p>
+            <ul>
+              <li>
+                The extension communicates with the local backend through a loopback
+                address.
+              </li>
+              <li>The extension does not request access to arbitrary websites.</li>
+              <li>
+                The extension does not read browsing history, bookmarks, cookies, or
+                unrelated browser data.
+              </li>
+              <li>
+                Logs are designed not to record API keys, authorization values, or
+                complete user documents.
+              </li>
+              <li>The browser extension does not execute remotely hosted code.</li>
+            </ul>
+            <p>
+              Users should use a trusted external provider and, where possible, an
+              HTTPS provider endpoint.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="permissions">
+          <span class="section-number" aria-hidden="true">10</span>
+          <div class="section-body">
+            <h2>Chrome permissions</h2>
+            <p>
+              FusionPDF requests only permissions needed for its single purpose:
+            </p>
+            <ul>
+              <li>
+                <code>storage</code>: saves provider configuration, user preferences,
+                non-sensitive capability summaries, and an optional remembered API key.
+              </li>
+              <li>
+                <code>contextMenus</code>: adds the <strong>Open FusionPDF</strong>
+                action to the extension action menu.
+              </li>
+              <li>
+                <code>http://127.0.0.1:53127/*</code>: communicates with the locally
+                installed Desktop Companion.
+              </li>
+            </ul>
+            <p>
+              FusionPDF does not request <code>&lt;all_urls&gt;</code>,
+              browsing-history, tab-content, download-management, or native-messaging
+              permissions.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="choices">
+          <span class="section-number" aria-hidden="true">11</span>
+          <div class="section-body">
+            <h2>User choices and deletion</h2>
+            <p>Users can:</p>
+            <ul>
+              <li>Disable <strong>Remember</strong> to stop storing the API key</li>
+              <li>Clear extension storage</li>
+              <li>Uninstall the Chrome extension</li>
+              <li>Stop or uninstall FusionPDF Desktop Companion</li>
+              <li>Delete local Desktop Companion data and model caches</li>
+              <li>Delete or rotate provider credentials through the provider's website</li>
+              <li>
+                Delete data retained by the provider according to that provider's
+                policy
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="policy-section" id="children">
+          <span class="section-number" aria-hidden="true">12</span>
+          <div class="section-body">
+            <h2>Children</h2>
+            <p>
+              FusionPDF is not directed to children under the age of 13. FusionPDF does
+              not knowingly collect personal information from children.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="changes">
+          <span class="section-number" aria-hidden="true">13</span>
+          <div class="section-body">
+            <h2>Changes to this policy</h2>
+            <p>
+              This Privacy Policy may be updated when FusionPDF changes its data
+              practices or features. The updated policy will include a new effective
+              date and will be published at the privacy policy URL listed in the Chrome
+              Web Store.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="contact">
+          <span class="section-number" aria-hidden="true">14</span>
+          <div class="section-body">
+            <h2>Contact</h2>
+            <p>For privacy questions or data requests, contact:</p>
+            <div class="contact-block">
+              <span class="contact-name">Zed Xu</span>
+              <a class="contact-email" href="mailto:zhichengtabor@gmail.com">
+                zhichengtabor@gmail.com
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="policy-section" id="limited-use">
+          <span class="section-number" aria-hidden="true">15</span>
+          <div class="section-body">
+            <h2>Chrome Web Store Limited Use</h2>
+            <p>
+              FusionPDF uses user data only to provide its disclosed single purpose:
+              processing user-selected PDFs, locating text regions through the locally
+              installed Desktop Companion, and displaying translations from the
+              provider configured by the user.
+            </p>
+            <p>FusionPDF does not:</p>
+            <ul>
+              <li>Sell user data</li>
+              <li>Transfer user data for advertising</li>
+              <li>
+                Use user data to determine creditworthiness or eligibility for lending
+              </li>
+              <li>
+                Use or transfer user data for purposes unrelated to its single purpose
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>FusionPDF Privacy Policy</span>
+      <span>
+        <a href="https://github.com/orwhd/FusionPDF">GitHub repository</a>
+        <span aria-hidden="true"> / </span>
+        <a href="mailto:zhichengtabor@gmail.com">Privacy contact</a>
+      </span>
+    </footer>
+  </body>
+</html>
